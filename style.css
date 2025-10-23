@@ -1,0 +1,187 @@
+/* Core palette inspired by your references */
+:root {
+  --light-bg: #F5F7FA;
+  --sidebar-bg: #EFF2F8;
+  --text-main: #2C3454;
+  --gradient-purple-start: #E5D4FF;
+  --gradient-purple-end: #C9C8FB;
+  --gradient-blue-start: #D4ECFF;
+  --gradient-blue-end: #B6D8FF;
+  --gradient-pink-start: #FDE2E4;
+  --gradient-pink-end: #F6C1E2;
+  --gradient-mint-start: #D6F5E1;
+  --gradient-mint-end: #BFEBD2;
+  --positive: #4CAF93;
+  --negative: #E57373;
+  --card-radius: 20px;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--text-main);
+  font-family: var(--font-family);
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  background-color: var(--sidebar-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: var(--shadow);
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--text-main);
+}
+
+nav .nav-item {
+  display: block;
+  font-size: 1.4rem;
+  margin: 1.2rem 0;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+nav .nav-item:hover {
+  color: #6C63FF;
+}
+
+/* Main content area */
+.content {
+  margin-left: 80px;
+  padding: 2rem;
+}
+
+/* Header */
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.header p {
+  margin-top: 0.25rem;
+  color: #848AA9;
+}
+
+/* Metrics grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.metric-card {
+  padding: 1.5rem;
+  border-radius: var(--card-radius);
+  color: var(--text-main);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metric-card h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.metric-card p {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.metric-card .small {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #6B6B8E;
+}
+
+/* Gradient classes for metrics */
+.gradient-purple {
+  background: linear-gradient(135deg, var(--gradient-purple-start), var(--gradient-purple-end));
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, var(--gradient-blue-start), var(--gradient-blue-end));
+}
+
+.gradient-pink {
+  background: linear-gradient(135deg, var(--gradient-pink-start), var(--gradient-pink-end));
+}
+
+.gradient-mint {
+  background: linear-gradient(135deg, var(--gradient-mint-start), var(--gradient-mint-end));
+}
+
+/* Panels */
+.panel {
+  background-color: #FFFFFF;
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.panel h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.75rem;
+}
+
+thead {
+  background-color: var(--sidebar-bg);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--light-bg);
+}
+
+.positive {
+  color: var(--positive);
+}
+
+.negative {
+  color: var(--negative);
+}
+
+/* Plan list */
+.plan-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.plan-list li {
+  margin-bottom: 0.5rem;
+}
