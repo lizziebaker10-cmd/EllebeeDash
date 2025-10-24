@@ -1,19 +1,19 @@
-/* Core palette inspired by your references */
+/* Core palette for Ellebee Fund */
 :root {
-  --light-bg: #F5F7FA;
-  --sidebar-bg: #EFF2F8;
-  --text-main: #2C3454;
-  --gradient-purple-start: #E5D4FF;
-  --gradient-purple-end: #C9C8FB;
-  --gradient-blue-start: #D4ECFF;
-  --gradient-blue-end: #B6D8FF;
+  --light-bg: #FDF5F9;
+  --sidebar-bg: #F8EFF7;
+  --text-main: #46235a;
+  --gradient-purple-start: #F5D0FA;
+  --gradient-purple-end: #E9C4F3;
+  --gradient-blue-start: #E6E6FA;
+  --gradient-blue-end: #D4C8FB;
   --gradient-pink-start: #FDE2E4;
-  --gradient-pink-end: #F6C1E2;
-  --gradient-mint-start: #D6F5E1;
-  --gradient-mint-end: #BFEBD2;
+  --gradient-pink-end: #F8C1D9;
+  --gradient-mint-start: #E0F7F4;
+  --gradient-mint-end: #CDECE8;
   --positive: #4CAF93;
   --negative: #E57373;
-  --card-radius: 20px;
+  --card-radius: 24px;
   --shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   font-family: "Montserrat", sans-serif;
 }
@@ -61,16 +61,15 @@ nav .nav-item {
 }
 
 nav .nav-item:hover {
-  color: #6C63FF;
+  color: #A15BC5;
 }
 
-/* Main content area */
+/* Content area */
 .content {
   margin-left: 80px;
   padding: 2rem;
 }
 
-/* Header */
 .header h1 {
   margin: 0;
   font-size: 1.8rem;
@@ -78,7 +77,7 @@ nav .nav-item:hover {
 
 .header p {
   margin-top: 0.25rem;
-  color: #848AA9;
+  color: #8A7090;
 }
 
 /* Metrics grid */
@@ -117,12 +116,12 @@ nav .nav-item:hover {
   color: #6B6B8E;
 }
 
-/* Gradient classes for metrics */
+/* Gradient card backgrounds */
 .gradient-purple {
   background: linear-gradient(135deg, var(--gradient-purple-start), var(--gradient-purple-end));
 }
 
-.gradient-blue {
+gradient-blue {
   background: linear-gradient(135deg, var(--gradient-blue-start), var(--gradient-blue-end));
 }
 
@@ -134,7 +133,7 @@ nav .nav-item:hover {
   background: linear-gradient(135deg, var(--gradient-mint-start), var(--gradient-mint-end));
 }
 
-/* Panels */
+/* Panel */
 .panel {
   background-color: #FFFFFF;
   border-radius: var(--card-radius);
@@ -149,6 +148,7 @@ nav .nav-item:hover {
   font-size: 1.2rem;
 }
 
+/* Table styling */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -184,4 +184,33 @@ tbody tr:nth-child(even) {
 
 .plan-list li {
   margin-bottom: 0.5rem;
+}
+
+/* Journal entry area */
+#journalText {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 12px;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  resize: vertical;
+}
+
+.save-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background-color: var(--gradient-pink-end);
+  color: var(--text-main);
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: opacity 0.2s ease;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
 }
