@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trade Journal - Ellebee Fund</title>
+  <title>Trade Journal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="sidebar">
-    <div class="logo">ℐ</div>
+    <div class="logo">℘</div>
     <nav>
       <a href="index.html" class="nav-item" title="Dashboard">🏠</a>
       <a href="trades.html" class="nav-item" title="Trades">📁</a>
-      <a href="plan.html" class="nav-item" title="Plan">🗓️</a>
+      <a href="plan.html" class="nav-item" title="Plan">📅️</a>
       <a href="#" class="nav-item" title="Settings">⚙️</a>
     </nav>
   </div>
@@ -25,7 +25,7 @@
 
     <section class="panel">
       <h2>Trade Details</h2>
-      <p><strong>Date:</strong> Oct 22</p>
+      <p><strong>Date:</strong> Oct 22</p>
       <p><strong>Symbol:</strong> /GC</p>
       <p><strong>Entry:</strong> 1950.0</p>
       <p><strong>Exit:</strong> 1965.5</p>
@@ -41,8 +41,22 @@
 
     <section class="panel">
       <h2>Journal Entry</h2>
-      <textarea rows="8" style="width:100%; border-radius:12px; padding:1rem; border:1px solid #ccc;" placeholder="Write your thoughts about this trade..."></textarea>
+      <textarea id="journalText" rows="8" placeholder="Write your thoughts about this trade..."></textarea>
+      <button class="save-btn" onclick="saveEntry()">Save Entry</button>
     </section>
   </div>
+
+  <script>
+    // Load saved journal entry if exists
+    const journalField = document.getElementById('journalText');
+    const savedEntry = localStorage.getItem('tradeJournalEntry');
+    if (savedEntry) {
+      journalField.value = savedEntry;
+    }
+    function saveEntry() {
+      localStorage.setItem('tradeJournalEntry', journalField.value);
+      alert('Journal entry saved!');
+    }
+  </script>
 </body>
 </html>
