@@ -1,4 +1,6 @@
-/* Core palette for Ellebee Fund */
+/* Core palette for Ellebee Fund with Y2K girly vibe */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Press+Start+2P&display=swap');
+
 :root {
   --light-bg: #FDF5F9;
   --sidebar-bg: #F8EFF7;
@@ -15,7 +17,6 @@
   --negative: #E57373;
   --card-radius: 24px;
   --shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -27,7 +28,7 @@ html, body {
   padding: 0;
   background-color: var(--light-bg);
   color: var(--text-main);
-  font-family: var(--font-family);
+  font-family: 'Comic Neue', 'Comic Sans MS', cursive;
 }
 
 /* Sidebar */
@@ -50,6 +51,7 @@ html, body {
   font-weight: bold;
   margin-bottom: 2rem;
   color: var(--text-main);
+  font-family: 'Press Start 2P', cursive;
 }
 
 nav .nav-item {
@@ -70,14 +72,17 @@ nav .nav-item:hover {
   padding: 2rem;
 }
 
+/* Header */
 .header h1 {
   margin: 0;
   font-size: 1.8rem;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .header p {
   margin-top: 0.25rem;
   color: #8A7090;
+  font-family: 'Comic Neue', cursive;
 }
 
 /* Metrics grid */
@@ -102,18 +107,21 @@ nav .nav-item:hover {
   margin: 0 0 0.5rem 0;
   font-size: 0.9rem;
   font-weight: 600;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .metric-card p {
   margin: 0;
   font-size: 1.6rem;
   font-weight: 700;
+  font-family: 'Comic Neue', cursive;
 }
 
 .metric-card .small {
   margin-top: 0.25rem;
   font-size: 0.75rem;
   color: #6B6B8E;
+  font-family: 'Comic Neue', cursive;
 }
 
 /* Gradient card backgrounds */
@@ -121,7 +129,7 @@ nav .nav-item:hover {
   background: linear-gradient(135deg, var(--gradient-purple-start), var(--gradient-purple-end));
 }
 
-gradient-blue {
+.gradient-blue {
   background: linear-gradient(135deg, var(--gradient-blue-start), var(--gradient-blue-end));
 }
 
@@ -146,6 +154,7 @@ gradient-blue {
   margin-top: 0;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive;
 }
 
 /* Table styling */
@@ -157,6 +166,7 @@ table {
 th, td {
   text-align: left;
   padding: 0.75rem;
+  font-family: 'Comic Neue', cursive;
 }
 
 thead {
@@ -184,6 +194,7 @@ tbody tr:nth-child(even) {
 
 .plan-list li {
   margin-bottom: 0.5rem;
+  font-family: 'Comic Neue', cursive;
 }
 
 /* Journal entry area */
@@ -195,6 +206,7 @@ tbody tr:nth-child(even) {
   font-size: 1rem;
   border: 1px solid #ddd;
   resize: vertical;
+  font-family: 'Comic Neue', cursive;
 }
 
 .save-btn {
@@ -209,6 +221,7 @@ tbody tr:nth-child(even) {
   cursor: pointer;
   box-shadow: var(--shadow);
   transition: opacity 0.2s ease;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .save-btn:hover {
